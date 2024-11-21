@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+          rel="stylesheet">
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./index.js" defer></script>
+
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="portfolio"/>
+    <title>personal website</title>
+
+    <!-- Icons -->
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-touch-icon-57x57.png">
+</head>
+<body>
+<main>
+    <!-- Hero Header -->
+    <header id="heroHeader" class="hero-header">
+        <nav id="navBar" class="nav">
+            <div class="container">
+                <button type="button" id="hamburgerBtn" class="nav__hamburger-btn">
+                    <span class="nav__hamburger-top"></span>
+                    <span class="nav__hamburger-center"></span>
+                    <span class="nav__hamburger-bottom"></span>
+                </button>
+                <ul id="navList" class="nav__list">
+                    <li class="nav__list-item">
+                        <a class="nav__list-link active" href="#heroHeader">&lt;Home &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#about">&lt;About Me &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#services">&lt;Education &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#skills">&lt;Skills &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#projects">&lt;Projects &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#contact">&lt;Contact &sol;&gt;</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="header__container container">
+            <div class="header__left">
+                <span class="header__sup-text">Hello There! I am</span>
+                <h1 class="header__title">
+                    <span class="header__title-1" data-role="DALIA">Dalia</span>
+                    <span class="header__title-1" data-role="BETINJANEH"> Betinjaneh</span>
+                </h1>
+                <p class="header__msg">A Mathematics, Statistics and Computer Science student at Concordia University</p>
+                <a href="resume_Dalia_Betinjaneh.pdf" class="header__resume">Resume</a>
+            </div>
+            <div class="header__right">
+                <img src="./assets/illustrations/header.svg" alt="Header section illustration"/>
+            </div>
+        </section>
+        <span class="header__bg"></span>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="section container">
+        <h2 class="section__title">About Me</h2>
+
+        <div class="service-cards">
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <!--<img src="./assets/services/support.svg" alt="Support Illustration"/>-->
+                </span>
+                <h3 class="service-card__title">Introduction</h3>
+                <p class="service-card__msg"> <br>Hi there! My name is Dalia Betinjaneh, a Mathematics and Statistics major with a minor in Computer Science at Concordia University. 
+                    I have strong interest in Data Science, Machine Learning and AI.
+                    <br><br>I am passionate about problem-solving and love continuously learning new skills. 
+                    Growing up, I have always loved mathematics. I pursuied studies in math and later on discovered how fun coding is.
+                    <br><br>A bit more about myself, I have lived in Syria, Belgium, Greece, Lebanon and am currently in located in Montreal, Canada.
+                
+                </p>
+        
+                <span class="service-card__bg"></span>
+            </article>
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <!--<img src="./assets/services/support.svg" alt="Support Illustration"/>-->
+                </span>
+                <h3 class="service-card__title">Spoken languages</h3>
+                <p class="service-card__msg"> <br>FRENCH - fluent <br> ENGLISH - fluent <br> ARABIC - fluent spoken, intermediate writting and reading 
+                    <br> GREEK - advanced spoken, intermediate writing and reading
+                
+                </p>
+        
+                <span class="service-card__bg"></span>
+            </article>
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <!--<img src="./assets/services/support.svg" alt="Support Illustration"/>-->
+                </span>
+                <h3 class="service-card__title">Hobbies</h3>
+                <p class="service-card__msg"> 
+                    <div class="hobbies-grid">
+                        <div class="hobby">
+                            <img src="assets/hobbies/piano.png" alt="Piano" />
+                            <p>Piano</p>
+                        </div>
+                        <div class="hobby">
+                            <img src="assets/hobbies/rubics.png" alt="Rubik's Cube" />
+                            <p>Rubik's Cube</p>
+                        </div>
+                        <div class="hobby">
+                            <img src="assets/hobbies/baking.jpg" alt="Baking" />
+                            <p>Baking</p>
+                        </div>
+                        <div class="hobby">
+                            <img src="assets/hobbies/running.jpg" alt="Running" />
+                            <p>Running</p>
+                        </div>
+                        <div class="hobby">
+                            <img src="assets/hobbies/sewing.jpg" alt="sewing" />
+                            <p>Sewing</p>
+                        </div>
+                        <div class="hobby">
+                            <img src="assets/hobbies/chess.jpg" alt="chess" />
+                            <p>Chess</p>
+                        </div>
+                        <div class="hobby">
+                            <img src="assets/hobbies/anime.webp" alt="chess" />
+                            <p>Anime</p>
+                        </div>
+                        <div class="hobby">
+                            <img src="assets/hobbies/reading.png" alt="chess" />
+                            <p>Reading</p>
+                        </div>
+                    </div>
+                
+                </p>
+        
+                <span class="service-card__bg"></span>
+            </article>
+
+
+        
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section container">
+        <h2 class="section__title">Education</h2>
+
+        <div class="service-cards">
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <!--<img src="./assets/services/support.svg" alt="Support Illustration"/>-->
+                </span>
+                <h3 class="service-card__title">Concordia University - Montreal, QC</h3>
+                <p class="service-card__msg"> <br>B.Sc. in Mathematics and Statistics, Minor in Computer Science<br><br> Relevant courses : Probability, Statistics, Optimisation, Object Oriented Programming, Discrete Math, Mathematical
+                    Modeling, Investment Math, Linear Algebra I&II, Multivariable Calculus I&II, Ordinary Differential Equations, System Hardware, 
+                    Data Structures & Algorithms, Advanced Design in C++, Web Development, Analysis, Mathematics for Computer Science.</p>
+                <span class="service-card__bg"></span>
+            </article>
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <!--<img src="./assets/services/design.svg" alt="Design Illustration"/>-->
+                </span>
+                <h3 class="service-card__title">Grand Lycée Franco-Libanais de Beyrouth - Lebanon</h3>
+                <p class="service-card__msg"><br>French Baccalaureate in mathematics, life and earth science, physics, and chemistry with Highest Honors.</p>
+                <span class="service-card__bg"></span>
+            </article>
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <!--<img src="./assets/services/developing.svg" alt="Deploy Illustration"/>-->
+                </span>
+                <h3 class="service-card__title">More Schools I have attended</h3>
+                <p class="service-card__msg"> <br>Lycée Francais Nahr Ibrahim <br>Beirut, Lebanon <br><br>Lycée Franco-Hellenique Eugene Delacroix  <br>Athens, greece<br><br>Lycée Francais Charles de Gaulles <br>Damascus, Syria</p>
+                <span class="service-card__bg"></span>
+            </article>
+        </div>
+    </section>
+
+    <!--Skills-->
+    <section id="skills" class="section container">
+        <h2 class="section__title">Skills</h2>
+        <br><br><br><br><br>
+        <div class="skills__grid">
+            <article class="work">
+                <div class="work__box skill__box">
+                    <span class="work__img-box">
+                        <img src="./assets/skills/java.png" alt="Java"/>
+                    </span>
+                    <h3 class="work__title">Java</h3>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box skill__box">
+                    <span class="work__img-box">
+                        <img src="./assets/skills/python.png" alt="Python"/>
+                    </span>
+                    <h3 class="work__title">Python</h3>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box skill__box">
+                    <span class="work__img-box">
+                        <img src="./assets/skills/c++.png" alt="C++"/>
+                    </span>
+                    <h3 class="work__title">C++</h3>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box skill__box">
+                    <span class="work__img-box">
+                        <img src="./assets/skills/html.jpg" alt="HTML - CSS - JS"/>
+                    </span>
+                    <h3 class="work__title">HTML - CSS - JS</h3>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box skill__box">
+                    <span class="work__img-box">
+                        <img src="./assets/skills/github.png" alt="GitHub"/>
+                    </span>
+                    <h3 class="work__title">GitHub</h3>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box skill__box">
+                    <span class="work__img-box">
+                        <img src="./assets/skills/microsoft.png" alt="Microsoft Suite"/>
+                    </span>
+                    <h3 class="work__title">Microsoft Suite</h3>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box skill__box">
+                    <span class="work__img-box">
+                        <img src="./assets/skills/maple.png" alt="Maple Software"/>
+                    </span>
+                    <h3 class="work__title">Maple Software</h3>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box skill__box">
+                    <span class="work__img-box">
+                        <img src="./assets/skills/mathematica.png" alt="Mathematica"/>
+                    </span>
+                    <h3 class="work__title">Mathematica</h3>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+
+<!--Projects-->
+    <section id="projects" class="section container">
+        <h2 class="section__title">Projects</h2>
+        <div class="works">
+            <article class="work">
+                <a class="work__link" onclick="showPopup(event)">
+                    <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="assets/projects/warzone.jpg" alt="Warzone"/>
+                </span>
+                    <h3 class="work__title">Warzone Risk Video Game</h3>
+                    <span class="work__badges">
+                    <span class="work__badge">C++</span>
+                </span>
+                </div>
+                </a>
+            </article>
+
+
+            <article class="work">
+                <a href="https://github.com/daliabtnj/Web-Program.git" target="_blank" class="work__link">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="assets/projects/services.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">Service Website System</h3>
+                    <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                    <span class="work__badge">Node.js</span>
+                </span>
+                </div>
+                </a>
+            </article>
+            <article class="work">
+                <a href="https://github.com/daliabtnj/Cellular-Network-Analysis.git" target="_blank" class="work__link">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="assets/projects/cellular.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">Cellular Network Analysis</h3>
+                    <span class="work__badges">
+                    <span class="work__badge">Python</span>
+                </span>
+                </div>
+                </a>
+            </article>
+            <article class="work">
+                <a href="" target="_blank" class="work__link">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="assets/projects/personalWebsite.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">Personal Website</h3>
+                    <span class="work__badges">
+                    <span class="work__badge">HTML</span>
+                    <span class="work__badge">CSS</span>
+                    <span class="work__badge">JavaScript</span>
+                </span>
+                </div>
+                </a>
+            </article>
+            <article class="work">
+                <a href="https://github.com/daliabtnj/Bookstore-Tracking-System.git" target="_blank" class="work__link">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="assets/projects/bookstore.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">Bookstore Tracking System</h3>
+                    <span class="work__badges">
+                    <span class="work__badge">Java</span>
+                </span>
+                </div>
+                </a>
+            </article>
+            <article class="work">
+                <a href="https://github.com/daliabtnj/Whale-Population-Dynamics.git" target="_blank" class="work__link">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="assets/projects/whales.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">Whales Population Dynamics </h3>
+                    <span class="work__badges">
+                    <span class="work__badge">Python</span>
+                    <span class="work__badge">Mathematica</span>
+                    <span class="work__badge">numpy</span>
+                    <span class="work__badge">matplotlib</span>
+                </span>
+                </div>
+                </a>
+            </article>
+            <article class="work">
+                <a href="https://github.com/daliabtnj/Word-Sort.git" target="_blank" class="work__link">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="assets/projects/wordsorter.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">JSON Data Sorter </h3>
+                    <span class="work__badges">
+                    <span class="work__badge">C</span>
+                </span>
+                </div>
+                </a>
+            </article>
+            <article class="work">
+                <a class="work__link" onclick="showPopup2(event)">
+                    <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="assets/projects/academic.avif" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">Academic Repositories </h3>
+                    <span class="work__badges">
+                    <span class="work__badge">Java</span>
+                    <span class="work__badge">Data Structures</span>
+                    <span class="work__badge">Algorithms</span>
+                    <span class="work__badge">Mathematica</span>
+                </span>
+                </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+        <h2 class="section__title">Let's Connect!</h2>
+        <div class="service-cards">
+            <article class="work__link contact-box">
+                <div class="work__box">
+                    <h3 class="contact-title">Contact Me</h3>
+                    <div class="contact-icons">
+                        <a href="mailto:dalia.betinjaneh03@gmail.com" class="contact-icon" title="Email">
+                            <img src="assets/contact/email.png" alt="Email Icon">
+                        </a>
+                        <a href="https://linkedin.com/in/dalia-betinjaneh" class="contact-icon" title="LinkedIn">
+                            <img src="assets/contact/linkedin.png" alt="LinkedIn Icon">
+                        </a>
+                        
+                        <a href="https://github.com/daliabtnj" class="contact-icon" title="GitHub">
+                            <img src="assets/contact/git.png" alt="GitHub Icon">
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <br><br><br><br><br>
+            <div class="contact-image">
+                <span class="contact__illustration">
+                    <img src="./assets/illustrations/connect.svg" alt="Group of people connecting with each other"/>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Dalia Betinjaneh</p>
+        <p>&hearts; &hearts; &hearts;  &hearts; &hearts; &hearts; &hearts; &hearts; &hearts;</p>
+    </footer>
+
+</main>
+</body>
+</html>
