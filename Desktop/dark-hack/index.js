@@ -47,7 +47,7 @@ window.addEventListener('resize', ()=>{
 
 // As the user scrolls, the active link should change based on the section currently displayed on the screen.
 window.addEventListener('scroll', ()=>{
-  const sections = document.querySelectorAll('#heroHeader, #services, #works, #contact');
+  const sections = document.querySelectorAll('#heroHeader, #about, #services, #skills, #projects');
 
   // Loop through sections and check if they are visible
   sections.forEach((section) => {
@@ -129,3 +129,45 @@ new SweetScroll({
   easing: 'easeOutQuint',
   offset: NAV_BAR.getBoundingClientRect().height - 80
 });
+
+// pop up for code request project
+function showPopup(event) {
+  event.preventDefault(); // Prevent the default link behavior
+  const popup = document.createElement('div');
+  popup.className = 'popup';
+  popup.innerHTML = `
+      <div class="popup-content">
+          <p>Code for Warzone can be made available upon request.</p>
+          <button onclick="closePopup()">Close</button>
+      </div>
+  `;
+  document.body.appendChild(popup);
+}
+
+function closePopup() {
+  const popup = document.querySelector('.popup');
+  if (popup) {
+      popup.remove();
+  }
+}
+
+function showPopup2(event) {
+  event.preventDefault(); // Prevent the default link behavior
+  const popup = document.createElement('div');
+  popup.className = 'popup';
+  popup.innerHTML = `
+      <div class="popup-content">
+          <p>A library of academic projects can be made available upon request, in accordance with academic rules.</p>
+          <button onclick="closePopup()">Close</button>
+      </div>
+  `;
+  document.body.appendChild(popup);
+}
+
+function closePopup() {
+  const popup = document.querySelector('.popup');
+  if (popup) {
+      popup.remove();
+  }
+}
+

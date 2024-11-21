@@ -903,3 +903,213 @@ body {
     }
 }
 
+/*
+ * ========================
+ * CONTACT BOX
+ * ========================
+ */
+/* Container for contact section */
+.contact-box {
+    display: block;
+    text-decoration: none; /* Remove underline */
+    position: relative;
+    width: 100%; /* Full width by default */
+    padding: 2%;
+}
+
+/* Contact box styles */
+.contact-box .work__box {
+    border-radius: 7px;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects for the contact box */
+.contact-box:hover .work__box {
+    transform: scale(1.05); /* Scale effect */
+    box-shadow: 0 4px 15px rgba(0, 255, 148, 0.5); /* Green glow effect */
+}
+
+/* Title inside the contact box */
+.contact-box .contact-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+/* Icons container (do not make it a circle, just display them in a row) */
+.contact-box .contact-icons {
+    display: flex;
+    justify-content: center; /* Center icons */
+    gap: 20px; /* Add space between icons */
+    margin-top: 1rem;
+}
+
+/* Individual contact icon (each will be a circle with an image inside) */
+.contact-box .contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Size of the circle */
+    height: 60px; /* Height of the circle */
+    border-radius: 50%; /* Makes it circular */
+    border: 2px solid #59ffb9; /* Green border */
+    overflow: hidden; /* Ensures image doesn't spill outside */
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Icon image inside the circle */
+.contact-box .contact-icon img {
+    width: 100%; /* Ensures the image fills the circle's width */
+    height: 100%; /* Ensures the image fills the circle's height */
+    object-fit: cover; /* Ensures the image is cropped to cover the circle */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+/* Hover effect for the icon (slightly enlarge the circle on hover) */
+.contact-box .contact-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the circle */
+    background-color: #59ffb9; /* Green fill */
+    color: #26222d; /* Dark text */
+}
+
+/* Hover effect for the image inside the icon */
+.contact-box .contact-icon:hover img {
+    transform: scale(1.1); /* Slightly enlarge the image inside the circle */
+}
+
+/* Responsive layout: On larger screens, arrange the box on the left and the image on the right */
+@media screen and (min-width: 768px) {
+    .contact-container {
+        flex-direction: row; /* Align items horizontally */
+    }
+    .contact-image {
+        flex: 1;
+        max-width: 400px; /* Set a max-width for the image */
+    }
+    .contact-image img {
+        width: 100%; /* Ensure image fills container */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/*
+ * ========================
+ * POP UP REQUEST CODE
+ * ========================
+ */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #26222d;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 255, 148, 0.5);
+}
+
+.popup-content button {
+    background-color: #00ff94;
+    color: #26222d;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.popup-content button:hover {
+    background-color: #00d97c;
+}
+
+/*
+ * ========================
+ * SKILLS
+ * ========================
+ */
+/* Grid layout for skills section */
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;    /* Centers the grid vertically */
+    margin-right: 7em;
+}
+
+/* Styling for skill boxes */
+.skill__box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #26222d;
+    border: 2px solid #00ff94;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 255, 148, 0.5);
+}
+
+/* Ensures images fit uniformly inside the skill boxes */
+.skill__box .work__img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.skill__box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Title inside skill boxes */
+.skill__box .work__title {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Responsive Design for smaller screens (phones) */
+@media (max-width: 768px) {
+    .skills__grid {
+        grid-template-columns: repeat(3, 1fr); /* Three boxes per row */
+        gap: 1rem; /* Adjust the spacing between items */
+        margin: 2em;
+    }
+
+    .skill__box {
+        width: 120px; /* Smaller size for skill boxes */
+        height: 120px;
+    }
+
+    .skill__box .work__title {
+        font-size: 0.9rem; /* Slightly smaller text size */
+    }
+}
+
